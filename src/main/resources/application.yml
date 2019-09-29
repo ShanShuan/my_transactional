@@ -1,0 +1,14 @@
+server:
+  port: 9630
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package:
+logging:
+  level:
+    root: debug
